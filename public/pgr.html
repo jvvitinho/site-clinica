@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página para gestão de PGR na clínica de medicina e segurança do trabalho.">
+    <title>PGR - Clínica</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo básico para melhor visualização */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        form {
+            margin: 1rem 0;
+        }
+        input[type="file"] {
+            display: block;
+            margin-bottom: 1rem;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PGR - Programa de Gerenciamento de Riscos</h1>
+    </header>
+    <main>
+        <section aria-labelledby="info-pgr">
+            <h2 id="info-pgr">Informações do PGR</h2>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="upload-pgr">Selecione o arquivo:</label>
+                <input type="file" id="upload-pgr" name="upload-pgr" accept=".pdf,.doc,.docx" required>
+                <button type="submit">Anexar Arquivo</button>
+            </form>
+            <p><strong>Data de início:</strong> 01/01/2024</p>
+            <p><strong>Data de fim:</strong> 01/01/2025</p>
+        </section>
+    </main>
+</body>
+</html>

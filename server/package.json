@@ -1,0 +1,12 @@
+{
+  "name": "clinica-app",
+  "version": "1.0.0",
+  "description": "Backend para o site da clínica",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
